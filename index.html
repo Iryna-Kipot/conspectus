@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Внешние CSS файлы подключаются к странице в теге head, используя тег link.-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Символ ^-->
+    <a class="link" href="#ancor">ссылка на элемент страницы с заданным id</a>
+
+    <!--Символ $-->
+    <a class="link" href="./index.html">На главную страницу</a>
+
+    <!--Символ *-->
+    <section id="introduction">333333</section>
+
+    <!--Символ > Первый потомок-->
+    <section>
+      <div>
+        <h4>Заголовок</h4>
+      </div>
+    </section>
+
+    <!--Любой потомок-->
+    <section>
+      <div class="first">
+        <h4>Заголовок</h4>
+        <div>Непрямой потомок section</div>
+      </div>
+      <div class="first">1</div>
+    </section>
+
+    <!--Символ + -->
+    <section class="first">Элемент</section>
+    <section class="first-neighbor">1-й сосед</section>
+    <section class="second-neighbor">2-й сосед</section>
+    <section class="third-neighbor">3-й сосед</section>
+  </body>
+
+  <!--Символ ~ -->
+  <section class="zero">сосед сверху</section>
+  <section class="firsts">Элемент</section>
+  <section class="firsts-neighbor">1-й сосед</section>
+  <section class="second-neighbor">2-й сосед</section>
+  <section class="third-neighbor">3-й сосед</section>
+</html>
